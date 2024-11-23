@@ -74,7 +74,7 @@ export default function PostComment(props:any) {
      tweet?.comment &&
      tweet?.comment?.map((comment)=>
      
-       <div className='border-gray-700   py-5 p-2 sm:p-5  transition-all cursor-pointer  my-2 border-t '>
+       <div className='border-gray-700   py-5 p-2 sm:p-5  transition-all cursor-pointer  my-2 border-t' key={comment?.content}>
       <div className='grid grid-cols-12  gap-3'>
       <div className='col-span-2 sm:col-span-1'>
         {
